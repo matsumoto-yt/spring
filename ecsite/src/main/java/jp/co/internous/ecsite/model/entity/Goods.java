@@ -27,12 +27,12 @@ public class Goods {
 	@Column(name="price")
 	private long price;
 	
-	@Column(name="update_at")
-	private Timestamp updateAt;
+	@Column(name="updated_at")
+	private Timestamp updatedAt;
 	
 	
 	
-	private void setId(long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	
@@ -41,7 +41,7 @@ public class Goods {
 	}
 	
 	
-	private void setGoodsName(String goodsName) {
+	public void setGoodsName(String goodsName) {
 		this.goodsName = goodsName;
 	}
 	
@@ -49,7 +49,7 @@ public class Goods {
 		return goodsName;
 	}
 	
-	private void setPrice(long price) {
+	public void setPrice(long price) {
 		this.price = price;
 	}
 	
@@ -57,12 +57,12 @@ public class Goods {
 		return price;
 	}
 	
-	private void setUpdateAt(Timestamp updateAt) {
-		this.updateAt = updateAt;
+	public void setUpdatedAt(Timestamp updatedAt) {
+		this.updatedAt = updatedAt;
 	}
 	
 	
-	public Timestamp getUpdateAt() {
-		return updateAt;
+	public Timestamp getUpdatedAt() {
+		return updatedAt;
 	}
 }

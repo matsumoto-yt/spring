@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
-<html xmlns:th ="http://www.thymeleaf.org">
+<html xmlns:th ="http://www.thymeLeaf.org">
 
 <head>
 	<meta charset = "UTF-8" />
 	<title>ECサイト</title>
+	<link href = "/css/style.css" th:href="@{/css/style.css}" rel = "stylesheet" />
 </head>
 
 	<body>
@@ -15,7 +16,7 @@
 		<div id = "adminPage">
 			<h2>管理者ログイン</h2>
 			
-			<form name = "LoginForm" method = "post" action = "/ecsite/admin/welcome" th:action = "@{/ecsite/admin/welcome}" />
+			<form name = "LoginForm" method = "post" action = "/ecsite/admin/welcome" th:action = "@{/ecsite/admin/welcome}">
 				<p>User name:<input type = "text" name = "userName" /></p>
 				<p>Password:<input type = "password" name = "password" /></p>
 				<button type = "submit">Login</button>
